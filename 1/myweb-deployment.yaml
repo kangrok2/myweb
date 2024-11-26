@@ -16,7 +16,7 @@ spec:                      # 3가지 필수 구성요서중 하나 specification
     spec:
       containers:
       - name: myweb            # 컨테이너 1개를 생성, .spec.template.spec.containers[0].name 필드를 사용해서 myweb 라는 이름을 붙인다.
-        image: 058264448902.dkr.ecr.ap-northeast-2.amazonaws.com/myweb:1.0  # 파드가 도커 허브의 myweb 1.0 버전 이미지를 실행하는 myweb 컨테이너 1개를 실행하는 것을 나타낸다.
+        image: public.ecr.aws/t8u8q9s0/myweb:1.0  # 파드가 도커 허브의 myweb 1.0 버전 이미지를 실행하는 myweb 컨테이너 1개를 실행하는 것을 나타낸다.
         ports:
         - containerPort: 80
 ---
